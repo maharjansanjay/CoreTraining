@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CoreTraining.Data;
+using CoreTraining.Service;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
@@ -24,6 +27,12 @@ namespace CoreTraining
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            services.AddDbContext<CoreTrainingContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("CoreTrainingDB"))
+            );
+            services.AddTransient<IStudentService,StudentService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

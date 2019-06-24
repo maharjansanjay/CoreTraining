@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTraining", "CoreTraining\CoreTraining.csproj", "{00D3D133-262B-4C66-BD22-084A1068D7B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTraining", "CoreTraining\CoreTraining.csproj", "{00D3D133-262B-4C66-BD22-084A1068D7B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTraining.Data", "CoreTraining.Data\CoreTraining.Data.csproj", "{80D0E894-4CDD-45B7-82DD-437DEC63FA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTraining.Data", "CoreTraining.Data\CoreTraining.Data.csproj", "{80D0E894-4CDD-45B7-82DD-437DEC63FA6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTraining.Service", "CoreTraining.Service\CoreTraining.Service.csproj", "{541CFF71-3478-436C-9DAF-ECFBC0F0081F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTraining.Service", "CoreTraining.Service\CoreTraining.Service.csproj", "{541CFF71-3478-436C-9DAF-ECFBC0F0081F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
